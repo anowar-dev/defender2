@@ -2370,15 +2370,21 @@ a:hover {
 --------------------------------------------------------------*/
 .section-footer {
   padding-top: 60px;
-  background: #542C7B;
+  /* background: #542C7B; */
+  /* background: #B08961; */
+  /* background: linear-gradient(to bottom, #542C7B, #B08961); */
   margin-top: 50px;
+}
+.footer_div{
+  /* background: linear-gradient(#542C7B, #B08961); */
+  background: linear-gradient(#220143, #4a1f76, #542C7B);
 }
 .item-list-a a{
   color: #d8d7d7;
   transition: .3s;
 }
 .item-list-a a:hover{
-  color: #000000;
+  color: #B08961;
 }
 .list-inline-item a{
   color: #a6a5a5;
@@ -2397,7 +2403,7 @@ a:hover {
 .section-footer .item-list-a i {
   font-size: 18px;
   padding-right: 4px;
-  color: #000000;
+  color: #B08961;
 }
 
 .section-footer .widget-a .w-title-a {
@@ -2409,7 +2415,7 @@ a:hover {
   opacity: 1;
 }
 footer {
-  background: #542C7B;
+  /* background: #542C7B; */
   text-align: center;
   padding: 30px 0;
 }
@@ -2423,6 +2429,9 @@ footer .credits{
   font-size: 14px;
   color: #d8d7d7;
   transition: .3s;
+}
+.credits a{
+  color: #B08961;
 }
 .credits a:hover{
   color: #ffffff;
