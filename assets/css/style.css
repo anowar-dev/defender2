@@ -2736,6 +2736,26 @@ footer .credits{
   margin-bottom: 20px;
 }
 
+/* INvestment page */
+.investment_row{
+  flex-direction: row-reverse;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.investment_list{
+  list-style: none;
+  padding-left: 0;
+} 
+.investment_list li{
+  margin-bottom: 7px;
+}
+.investment_list2{
+  padding-left: 20px;
+}
+.investment_list2 li{
+  margin-bottom: 7px;
+}
+
 /* Responsive design stat here */
 @media (max-width: 1200px) {
   .tab_inner iframe{
