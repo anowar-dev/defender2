@@ -216,33 +216,33 @@
 
 // Animation
 $(document).ready(function() {
-  function checkVisibility() {
-    $('.fade-in-section').each(function() {
-        var section = $(this);
-        var windowHeight = $(window).height();
-        var scrollTop = $(window).scrollTop();
-        var sectionOffset = section.offset().top;
-        var sectionHeight = section.height();
-        
-        // Check if the section is within the viewport and the top of the section is 20px above the bottom of the viewport
-        if (scrollTop + windowHeight - 20 > sectionOffset && scrollTop < sectionOffset + sectionHeight) {
-          section.css({opacity: "1", transition: ".5s", marginTop: "0"});
-        } else {
-          section.css({opacity: ".1", transition: ".5s", marginTop: "100px"});
-        }
-    });
-  }
+  setTimeout(() => {
+    function checkVisibility() {
+      $('.fade-in-section').each(function() {
+          var section = $(this);
+          var windowHeight = $(window).height();
+          var scrollTop = $(window).scrollTop();
+          var sectionOffset = section.offset().top;
+          var sectionHeight = section.height();
+          
+          // Check if the section is within the viewport and the top of the section is 20px above the bottom of the viewport
+          if (scrollTop + windowHeight - 20 > sectionOffset && scrollTop < sectionOffset + sectionHeight) {
+            section.css({background: "transparent", transition: "2s"});
+          } else {
+            section.css({background: "#000000", transition: "2s"});
+          }
+      });
+    }
+  
+    // Check visibility on scroll
+    $(window).on('scroll', checkVisibility);
+  
+    // Initial check in case the sections are already in view on page load
+    checkVisibility();
+  }, 1500);
+  
 
-  // Check visibility on scroll
-  $(window).on('scroll', checkVisibility);
-
-  // Initial check in case the sections are already in view on page load
-  checkVisibility();
-
-  // Card Slider
-  $(".getCode_button").click(function(){
-    let parentDiv = $(this).closest(".card_slider_open")
-  });
+ 
 
   // Golden Card Modal
   let goldenModal = $(".golden_card_modal");
