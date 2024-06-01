@@ -1944,6 +1944,21 @@ a:hover {
   transition: all 0.2s ease-in-out;
   padding: 15px 40px 15px 35px;
 }
+.card-overlay-hover:hover .link-two{
+  color: #ffffff;
+}
+.card-overlay-hover:hover .content-d{
+  color: #ffffff;
+}
+.card-overlay-hover:hover .info-agents{
+  color: #ffffff;
+}
+.card-overlay-hover:hover .link-one{
+  color: #ffffff;
+}
+.card-overlay-hover:hover .link-one:hover{
+  color: #B08961;
+}
 
 @media (min-width: 768px) {
   .card-box-d .card-overlay-hover {
@@ -2773,6 +2788,63 @@ footer .credits{
   color: #333333;
 }
 
+/* Bg Img */
+.card_section{
+  background: url('../img/background/Line.png');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.funfact_section{
+  background: url('../img/background/Line.png');
+  background-position: center 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.contact_section{
+  background: url('../img/background/Line.png');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.ceo_massage_section{
+  background: url('../img/background/Line.png');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.invest_section_bg:nth-child(odd){
+  background: url('../img/background/Line.png');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+/* Accourdion */
+.accordion-button{
+  border: none;
+}
+.accordion-header{
+  background: transparent;
+}
+.accordion-button:focus{
+  background: transparent;
+  outline-color: #542C7B;
+  box-shadow: none;
+}
+.mobile_accordion_inner{
+  margin-top: -50px;
+}
+.accordion-button:not(.collapsed){
+  background: transparent;
+  outline: none;
+  border: none;
+}
+.accordion-button.collapsed{
+  background: transparent;
+  outline: none;
+}
 /* Responsive design stat here */
 @media (max-width: 1200px) {
   .tab_inner iframe{

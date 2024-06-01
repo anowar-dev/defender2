@@ -231,18 +231,38 @@ $(document).ready(function() {
           section.css({opacity: ".1", transition: ".5s", marginTop: "100px"});
         }
     });
-}
+  }
 
-// Check visibility on scroll
-$(window).on('scroll', checkVisibility);
+  // Check visibility on scroll
+  $(window).on('scroll', checkVisibility);
 
-// Initial check in case the sections are already in view on page load
-checkVisibility();
+  // Initial check in case the sections are already in view on page load
+  checkVisibility();
 
-// Card Slider
-$(".getCode_button").click(function(){
-  let parentDiv = $(this).closest(".card_slider_open")
-})
+  // Card Slider
+  $(".getCode_button").click(function(){
+    let parentDiv = $(this).closest(".card_slider_open")
+  });
+
+  // Golden Card Modal
+  let goldenModal = $(".golden_card_modal");
+  $("#golden_btn").click(function(e){
+    e.preventDefault();
+    goldenModal.css({transform: "scale(1)", transition: ".5s"});
+  });
+  $(".golden_modal_close").click(function(){
+    goldenModal.css({transform: "scale(0)", transition: ".5s"});
+  });
+
+  // black Card Modal
+  let blackModal = $(".black_card_modal");
+  $("#black_btn").click(function(e){
+    e.preventDefault();
+    blackModal.css({transform: "scale(1)", transition: ".5s"});
+  });
+  $(".black_modal_close").click(function(){
+    blackModal.css({transform: "scale(0)", transition: ".5s"});
+  });
 });
 
 
